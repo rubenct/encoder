@@ -5,12 +5,9 @@ from app.routers.encoder import router
 
 app = FastAPI(title="Base64 Streamer API", version="1.0.0")
 
-# Allow Vercel frontend + local dev
-allowed_origins = os.getenv("CORS_ORIGINS", "http://localhost:5173,http://localhost:3000").split(",")
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=allowed_origins,
+    allow_origins=["*"],
     allow_methods=["POST", "GET"],
     allow_headers=["*"],
 )
