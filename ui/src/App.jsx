@@ -52,7 +52,6 @@ function App() {
     <div className="header-buttons">
       <a 
         href="https://www.rcarino.com/" 
-        target="_blank" 
         rel="noopener noreferrer"
         className="header-btn"
         title="Home"
