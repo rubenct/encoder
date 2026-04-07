@@ -246,3 +246,105 @@ body {
 .cursor {
   animation: blink 1s infinite;
 }
+
+/* Login Styles */
+.login-container {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+.login-title {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.credentials-display {
+  background-color: var(--bg-tertiary);
+  border: 1px dashed var(--border-color);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.credential-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.credential-item:last-child {
+  border-bottom: none;
+}
+
+.credential-label {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.credential-value {
+  color: var(--accent-green);
+  font-weight: 600;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--accent-green);
+}
+
+.error-message {
+  color: var(--accent-red);
+  font-size: 0.875rem;
+  padding: 0.5rem;
+  background-color: rgba(255, 71, 87, 0.1);
+  border: 1px solid var(--accent-red);
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-logout {
+  background: transparent;
+  border: 1px solid var(--text-secondary);
+  color: var(--text-secondary);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+}
+
+.btn-logout:hover {
+  border-color: var(--accent-red);
+  color: var(--accent-red);
+}
