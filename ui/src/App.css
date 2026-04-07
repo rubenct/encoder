@@ -38,6 +38,9 @@ body {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -325,10 +328,10 @@ body {
   border: 1px solid var(--accent-red);
 }
 
-.header-row {
+.header-right {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 
 .btn-logout {
@@ -347,4 +350,27 @@ body {
 .btn-logout:hover {
   border-color: var(--accent-red);
   color: var(--accent-red);
+}
+
+.header-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.header-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.header-btn:hover {
+  border-color: var(--accent-green);
+  color: var(--accent-green);
 }
