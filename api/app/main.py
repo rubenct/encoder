@@ -7,7 +7,7 @@ app = FastAPI(title="Base64 Streamer API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://encoder-ten.vercel.app"],
     allow_methods=["POST", "GET"],
     allow_headers=["*"],
 )
