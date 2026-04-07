@@ -27,6 +27,7 @@ This SPA converts text to Base64 with real-time streaming. The server processes 
 - Server-Sent Events (SSE) for efficient streaming
 - AbortController for client-side cancellation
 - Block new requests while a process is active
+- Client-side authentication (credentials displayed for demo)
 
 ---
 
@@ -102,6 +103,7 @@ Health check endpoint.
 | Frontend | React 18 + Vite |
 | Backend | FastAPI (Python 3.12) |
 | Streaming | Server-Sent Events (SSE) |
+| Authentication | Client-side login |
 | Deployment | Vercel + Railway |
 
 ---
@@ -149,6 +151,20 @@ docker-compose up --build
 ```
 
 Visit `https://localhost` (basic auth: admin/admin)
+
+---
+
+## Credentials
+
+### Production (Login Screen)
+- **Username:** admin
+- **Password:** encoder2026
+
+Credentials are displayed on the login screen for easy access in the demo.
+
+### Docker (Basic Auth)
+- **Username:** admin
+- **Password:** admin
 
 ---
 
